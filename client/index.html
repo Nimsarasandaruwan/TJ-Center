@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TJ Center | Online Store</title>
+
+
+<!-- Google Font -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+<!-- Font Awesome -->
+
+<link 
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+<!-- CSS -->
+
+<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+
+<body>
+
+
+<!-- Background -->
+
+<div class="bg-circle one"></div>
+
+<div class="bg-circle two"></div>
+
+
+
+<!-- NAVBAR -->
+
+
+<header>
+
+<nav>
+
+
+<div class="logo">
+
+TJ Center
+
+</div>
+
+
+
+<ul>
+
+<li>
+<a href="index.html">
+Home
+</a>
+</li>
+
+
+<li>
+<a href="#shop">
+Shop
+</a>
+</li>
+
+
+<li>
+<a href="#about">
+About
+</a>
+</li>
+
+
+<li>
+<a href="#contact">
+Contact
+</a>
+</li>
+
+
+</ul>
+
+
+
+<div class="nav-buttons">
+
+
+<a href="login.html">
+
+<button class="login-btn">
+
+<i class="fa-solid fa-user"></i>
+
+Login
+
+</button>
+
+</a>
+
+
+<button 
+class="cart-btn"
+onclick="toggleCart()"
+>
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span id="cartCount">
+0
+</span>
+
+</button>
+
+
+</div>
+
+
+
+</nav>
+
+
+</header>
+
+
+
+
+
+<!-- HERO SECTION -->
+
+
+<section class="hero" id="home">
+
+
+<div class="hero-text">
+
+
+<h4>
+ITEM OF THE DAY
+</h4>
+
+
+<h1>
+
+ALL YOUR
+
+<br>
+
+<span>
+CHOICES
+</span>
+
+ARE HERE
+
+
+</h1>
+
+
+<p>
+
+Premium Technical Products
+
+<br>
+
+Fast Delivery
+
+<br>
+
+Cash On Delivery
+
+<br>
+
+Best Quality
+
+</p>
+
+
+
+<button class="btn">
+
+SHOP NOW
+
+</button>
+
+
+
+</div>
+
+
+
+
+<div class="hero-image">
+
+
+<img src="1.png">
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+<!-- PRODUCTS -->
+
+
+<section id="shop">
+
+
+<h2 class="title">
+
+Our Products
+
+</h2>
+
+
+
+<div class="search-box">
+
+
+<input 
+
+type="text"
+
+id="search"
+
+placeholder="Search Products..."
+
+>
+
+
+</div>
+
+
+
+<div class="products"
+
+id="productList">
+
+
+<!-- Products Load From API -->
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+<!-- ABOUT -->
+
+
+<section id="about">
+
+
+<h2 class="title">
+
+About Us
+
+</h2>
+
+
+
+<div class="about-box">
+
+
+<h3>
+TJ Center
+</h3>
+
+
+<p>
+
+TJ Center is a modern online shopping platform.
+
+We provide quality products with fast delivery
+
+and secure ordering system.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- CONTACT -->
+
+
+<section id="contact">
+
+
+<h2 class="title">
+
+Contact
+
+</h2>
+
+
+
+<div class="contact-box">
+
+
+<p>
+
+<i class="fa-solid fa-phone"></i>
+
+0771234567
+
+</p>
+
+
+
+<p>
+
+<i class="fa-brands fa-whatsapp"></i>
+
+0742126797
+
+</p>
+
+
+
+<p>
+
+<i class="fa-solid fa-envelope"></i>
+
+tjcenter@gmail.com
+
+</p>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- CART POPUP -->
+
+
+<div class="cart-popup"
+
+id="cartBox">
+
+
+<h2>
+
+Shopping Cart
+
+</h2>
+
+
+
+<div id="cartItems">
+
+</div>
+
+
+
+<h3>
+
+Total :
+
+Rs.
+
+<span id="totalPrice">
+
+0
+
+</span>
+
+
+</h3>
+
+
+
+<button 
+class="btn"
+onclick="goCheckout()"
+>
+
+Checkout
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<footer>
+
+
+TJ Center © 2026
+
+</footer>
+
+
+
+
+
+
+<script src="js/cart.js"></script>
+
+<script src="js/script.js"></script>
+
+
+</body>
+
+
+</html>

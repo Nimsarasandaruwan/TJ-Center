@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+
+<meta charset="UTF-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<title>
+
+TJ Center | Checkout
+
+</title>
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+<link rel="stylesheet" href="css/checkout.css">
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+<div class="checkout-box">
+
+
+
+
+
+<h1>
+
+Checkout
+
+</h1>
+
+
+
+
+
+
+
+<form id="checkoutForm">
+
+
+
+
+
+<label>
+
+Full Name
+
+</label>
+
+
+<input
+
+type="text"
+
+id="name"
+
+placeholder="Your name"
+
+required
+
+>
+
+
+
+
+
+
+
+<label>
+
+Phone Number
+
+</label>
+
+
+<input
+
+type="text"
+
+id="phone"
+
+placeholder="07XXXXXXXX"
+
+required
+
+>
+
+
+
+
+
+
+
+<label>
+
+Delivery Address
+
+</label>
+
+
+<textarea
+
+id="address"
+
+placeholder="Enter your address"
+
+required
+
+></textarea>
+
+
+
+
+
+
+
+<label>
+
+Payment Method
+
+</label>
+
+
+<select id="paymentMethod">
+
+
+<option value="COD">
+
+Cash On Delivery
+
+</option>
+
+
+</select>
+
+
+
+
+
+
+
+
+
+<div class="order-summary">
+
+
+<h3>
+
+Order Total:
+
+Rs.
+
+<span id="checkoutTotal">
+
+0
+
+</span>
+
+
+</h3>
+
+
+</div>
+
+
+
+
+
+
+
+<button type="submit">
+
+Place Order
+
+</button>
+
+
+
+
+
+<button
+
+type="button"
+
+class="back"
+
+onclick="goBack()"
+
+>
+
+Back To Cart
+
+</button>
+
+
+
+
+
+
+
+</form>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<script src="js/checkout.js"></script>
+
+
+
+</body>
+
+
+</html>

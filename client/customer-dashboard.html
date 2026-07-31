@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>
+TJ Center | Customer Dashboard
+</title>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="css/customer-dashboard.css">
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+<!-- SIDEBAR -->
+
+
+<div class="sidebar">
+
+
+<h2>
+TJ Center
+</h2>
+
+
+
+<ul>
+
+
+<li>
+<a href="#">
+Dashboard
+</a>
+</li>
+
+
+
+<li>
+<a href="#products">
+Products
+</a>
+</li>
+
+
+
+<li>
+<a href="#orders">
+My Orders
+</a>
+</li>
+
+
+
+<li>
+<a href="#wishlist">
+Wishlist
+</a>
+</li>
+
+
+
+<li>
+<a href="#profile">
+Profile
+</a>
+</li>
+
+
+
+<li>
+<a href="login.html" onclick="logout()">
+Logout
+</a>
+</li>
+
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- MAIN -->
+
+
+<div class="main">
+
+
+
+
+
+<header>
+
+
+<h1>
+
+Welcome,
+
+<span id="customerName">
+Customer
+</span>
+
+</h1>
+
+
+
+<div class="profile-icon">
+
+👤
+
+</div>
+
+
+</header>
+
+
+
+
+
+
+
+
+
+<!-- DASHBOARD CARDS -->
+
+
+<div class="dashboard-cards">
+
+
+
+<div class="card">
+
+<h3>
+Total Orders
+</h3>
+
+<p id="totalOrders">
+0
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>
+Pending Orders
+</h3>
+
+<p id="pendingOrders">
+0
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>
+Wishlist
+</h3>
+
+<p id="wishlistCount">
+0
+</p>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- PRODUCTS -->
+
+
+<section id="products">
+
+
+<h2>
+
+Products
+
+</h2>
+
+
+
+<div class="product-container" id="productList">
+
+
+<!-- Products From API -->
+
+<p>
+Loading Products...
+</p>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ORDERS -->
+
+
+<section id="orders">
+
+
+<h2>
+
+My Orders
+
+</h2>
+
+
+
+<div class="order-container" id="orderList">
+
+
+<!-- Orders From API -->
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- PROFILE -->
+
+
+<section id="profile">
+
+
+<h2>
+
+My Profile
+
+</h2>
+
+
+
+<div class="profile-box">
+
+
+
+<p>
+
+Name:
+
+<span id="name">
+Loading...
+</span>
+
+</p>
+
+
+
+
+<p>
+
+Email:
+
+<span id="email">
+Loading...
+</span>
+
+</p>
+
+
+
+
+<p>
+
+Phone:
+
+<span id="phone">
+Loading...
+</span>
+
+</p>
+
+
+
+
+<p>
+
+Address:
+
+<span id="address">
+Loading...
+</span>
+
+</p>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- WISHLIST -->
+
+
+<section id="wishlist">
+
+
+<h2>
+
+Wishlist
+
+</h2>
+
+
+
+<div id="wishlistItems">
+
+
+<p>
+No Wishlist Items
+</p>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<footer>
+
+TJ Center © 2026
+
+</footer>
+
+
+
+
+
+
+
+<script src="js/customer-dashboard.js"></script>
+
+
+</body>
+
+</html>

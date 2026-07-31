@@ -1,0 +1,680 @@
+/* =================================
+   TJ CENTER PRO
+   LOGIN PAGE STYLE
+================================= */
+
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-family:'Poppins',sans-serif;
+
+
+    background:
+
+    linear-gradient(
+
+    135deg,
+
+    #d9ecff,
+
+    #ffd8ea
+
+    );
+
+
+    overflow:hidden;
+
+}
+
+
+
+
+
+
+/* ===============================
+ BACKGROUND CIRCLES
+================================ */
+
+
+.bg-circle{
+
+
+    position:fixed;
+
+    border-radius:50%;
+
+    filter:blur(80px);
+
+    z-index:-1;
+
+
+}
+
+
+
+.bg-circle.one{
+
+
+    width:350px;
+
+    height:350px;
+
+
+    background:#8fd3ff;
+
+
+    top:-100px;
+
+    left:-100px;
+
+
+}
+
+
+
+
+.bg-circle.two{
+
+
+    width:400px;
+
+    height:400px;
+
+
+    background:#ffb4d9;
+
+
+    right:-120px;
+
+    bottom:-100px;
+
+
+}
+
+
+
+
+
+
+/* ===============================
+ LOGIN CONTAINER
+================================ */
+
+
+.login-container{
+
+
+    width:100%;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+ LOGIN BOX
+================================ */
+
+
+.login-box{
+
+
+    width:420px;
+
+
+    padding:45px;
+
+
+    border-radius:30px;
+
+
+    background:
+
+
+    rgba(255,255,255,.55);
+
+
+
+    backdrop-filter:blur(20px);
+
+
+
+    box-shadow:
+
+
+    0 20px 40px rgba(0,0,0,.12);
+
+
+
+    animation:showBox .8s ease;
+
+
+
+}
+
+
+
+
+
+
+@keyframes showBox{
+
+
+from{
+
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+
+}
+
+
+to{
+
+
+    opacity:1;
+
+    transform:translateY(0);
+
+
+}
+
+
+}
+
+
+
+
+
+
+/* ===============================
+ LOGO
+================================ */
+
+
+.logo{
+
+
+    text-align:center;
+
+
+    font-size:35px;
+
+
+    font-weight:800;
+
+
+    color:#2F6BFF;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+.login-box h2{
+
+
+    text-align:center;
+
+
+    font-size:32px;
+
+
+    color:#222;
+
+
+}
+
+
+
+.login-box p{
+
+
+    text-align:center;
+
+
+    color:#666;
+
+
+    margin:10px 0 30px;
+
+
+}
+
+
+
+
+
+
+/* ===============================
+ INPUT
+================================ */
+
+
+.input-box{
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+.input-box label{
+
+
+    display:block;
+
+
+    margin-bottom:8px;
+
+
+    font-weight:600;
+
+
+}
+
+
+
+
+
+.input-box input{
+
+
+    width:100%;
+
+
+    padding:15px 18px;
+
+
+    border:none;
+
+
+    outline:none;
+
+
+    border-radius:15px;
+
+
+    background:
+
+
+    rgba(255,255,255,.8);
+
+
+
+    font-size:15px;
+
+
+
+}
+
+
+
+
+
+
+.input-box input:focus{
+
+
+    box-shadow:
+
+
+    0 0 0 3px rgba(47,107,255,.2);
+
+
+}
+
+
+
+
+
+
+
+
+/* ===============================
+ REMEMBER
+================================ */
+
+
+.remember{
+
+
+    display:flex;
+
+
+    justify-content:space-between;
+
+
+    align-items:center;
+
+
+    margin-bottom:25px;
+
+
+    font-size:14px;
+
+
+}
+
+
+
+.remember a{
+
+
+    text-decoration:none;
+
+
+    color:#2F6BFF;
+
+
+}
+
+
+
+
+
+
+/* ===============================
+ LOGIN BUTTON
+================================ */
+
+
+.login-btn{
+
+
+    width:100%;
+
+
+    padding:15px;
+
+
+    border:none;
+
+
+    border-radius:50px;
+
+
+    background:#2F6BFF;
+
+
+    color:white;
+
+
+    font-size:16px;
+
+
+    font-weight:600;
+
+
+    cursor:pointer;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.login-btn:hover{
+
+
+    transform:translateY(-5px);
+
+
+    box-shadow:
+
+
+    0 15px 30px rgba(47,107,255,.35);
+
+
+}
+
+
+
+
+
+
+/* ===============================
+ DIVIDER
+================================ */
+
+
+.divider{
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    margin:25px 0;
+
+
+}
+
+
+
+
+.divider::before,
+.divider::after{
+
+
+    content:"";
+
+
+    height:1px;
+
+
+    background:#ccc;
+
+
+    flex:1;
+
+
+}
+
+
+
+.divider span{
+
+
+    margin:0 15px;
+
+
+    color:#777;
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+ GOOGLE BUTTON
+================================ */
+
+
+.google-btn{
+
+
+    width:100%;
+
+
+    padding:14px;
+
+
+    border-radius:50px;
+
+
+    border:1px solid #ddd;
+
+
+    background:white;
+
+
+    cursor:pointer;
+
+
+    font-weight:600;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.google-btn:hover{
+
+
+    transform:translateY(-3px);
+
+
+}
+
+
+
+
+
+
+
+
+.register-text{
+
+
+    margin-top:25px;
+
+
+}
+
+
+
+
+.register-text a{
+
+
+    color:#2F6BFF;
+
+
+    text-decoration:none;
+
+
+    font-weight:600;
+
+
+}
+
+
+
+
+.admin-link{
+
+
+    text-align:center;
+
+
+    margin-top:20px;
+
+
+}
+
+
+
+.admin-link a{
+
+
+    color:#ff3366;
+
+
+    text-decoration:none;
+
+
+    font-weight:700;
+
+
+}
+
+
+
+
+
+
+/* ===============================
+ MOBILE
+================================ */
+
+
+@media(max-width:500px){
+
+
+.login-box{
+
+
+    width:90%;
+
+
+    padding:30px;
+
+
+}
+
+
+
+.login-box h2{
+
+
+    font-size:26px;
+
+
+}
+
+
+}

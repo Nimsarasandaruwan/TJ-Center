@@ -1,0 +1,442 @@
+/* =================================
+   TJ CENTER PRO
+   CART SYSTEM v2 CSS
+================================= */
+
+
+
+/* ===============================
+   CART POPUP
+================================ */
+
+
+.cart-popup{
+
+
+position:fixed;
+
+
+top:90px;
+
+
+right:30px;
+
+
+width:380px;
+
+
+max-height:80vh;
+
+
+background:white;
+
+
+border-radius:20px;
+
+
+padding:25px;
+
+
+box-shadow:0 15px 40px rgba(0,0,0,0.2);
+
+
+z-index:999;
+
+
+overflow-y:auto;
+
+
+display:none;
+
+
+}
+
+
+
+
+
+.cart-popup h2{
+
+
+text-align:center;
+
+
+margin-bottom:20px;
+
+
+color:#222;
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   CART ITEM
+================================ */
+
+
+.cart-item{
+
+
+display:flex;
+
+
+gap:15px;
+
+
+padding:15px 0;
+
+
+border-bottom:1px solid #ddd;
+
+
+}
+
+
+
+
+
+.cart-item img{
+
+
+width:80px;
+
+
+height:80px;
+
+
+object-fit:cover;
+
+
+border-radius:12px;
+
+
+}
+
+
+
+
+
+.cart-details{
+
+
+flex:1;
+
+
+}
+
+
+
+
+
+.cart-details h4{
+
+
+font-size:16px;
+
+
+margin-bottom:5px;
+
+
+}
+
+
+
+
+
+.cart-details p{
+
+
+font-weight:600;
+
+
+color:#444;
+
+
+}
+
+
+
+
+
+
+
+
+/* ===============================
+   QUANTITY BOX
+================================ */
+
+
+.quantity-box{
+
+
+display:flex;
+
+
+align-items:center;
+
+
+gap:10px;
+
+
+margin:10px 0;
+
+
+}
+
+
+
+
+
+.quantity-box button{
+
+
+width:30px;
+
+
+height:30px;
+
+
+border:none;
+
+
+border-radius:50%;
+
+
+cursor:pointer;
+
+
+background:#111;
+
+
+color:white;
+
+
+font-size:18px;
+
+
+}
+
+
+
+
+
+.quantity-box span{
+
+
+font-weight:600;
+
+
+font-size:16px;
+
+
+}
+
+
+
+
+
+
+
+
+/* ===============================
+   REMOVE BUTTON
+================================ */
+
+
+.remove-btn{
+
+
+border:none;
+
+
+background:#ff3b3b;
+
+
+color:white;
+
+
+padding:7px 15px;
+
+
+border-radius:20px;
+
+
+cursor:pointer;
+
+
+font-size:12px;
+
+
+}
+
+
+
+
+
+.remove-btn:hover{
+
+
+opacity:.8;
+
+
+}
+
+
+
+
+
+
+
+
+/* ===============================
+   EMPTY CART
+================================ */
+
+
+.empty-cart{
+
+
+text-align:center;
+
+
+padding:30px 10px;
+
+
+color:#777;
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   CART TOTAL
+================================ */
+
+
+.cart-popup h3{
+
+
+margin-top:20px;
+
+
+text-align:center;
+
+
+font-size:20px;
+
+
+}
+
+
+
+
+
+
+
+
+/* ===============================
+   CART BUTTON
+================================ */
+
+
+.cart-btn{
+
+
+position:relative;
+
+
+cursor:pointer;
+
+
+}
+
+
+
+
+
+#cartCount{
+
+
+background:red;
+
+
+color:white;
+
+
+border-radius:50%;
+
+
+padding:3px 8px;
+
+
+font-size:12px;
+
+
+position:absolute;
+
+
+top:-10px;
+
+
+right:-10px;
+
+
+}
+
+
+
+
+
+
+
+
+/* ===============================
+   MOBILE RESPONSIVE
+================================ */
+
+
+@media(max-width:600px){
+
+
+
+.cart-popup{
+
+
+right:10px;
+
+
+width:calc(100% - 20px);
+
+
+top:80px;
+
+
+}
+
+
+
+.cart-item img{
+
+
+width:60px;
+
+
+height:60px;
+
+
+}
+
+
+
+}
